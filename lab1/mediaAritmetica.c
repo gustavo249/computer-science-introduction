@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h> //librarie care ne ajuta sa facem calcule cu radical
 
 int main()
 {
+	//lucram cu tipul de data double care permite numere reale nu doar intregi
 	double a, b, c;
 	printf("Introduceti a:\n");
 	scanf("%lf", &a);

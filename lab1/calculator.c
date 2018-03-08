@@ -2,12 +2,14 @@
 
 int main()
 {
+	//declaram doua variable fara valori momentan
 	int a, b;
 	printf("Introduceti primul nr:\n");
-	scanf("%d", &a);
+	scanf("%d", &a); //se atribuie valoare introdusa de utilizator in variabila a
 	printf("Introduceti al doilea nr:\n");
-	scanf("%d", &b);
+	scanf("%d", &b); //same shit with b
 	
+	//se printeaza calculele efectuate, %d va fi un inlocuitor pt valoarea rezultata
 	printf("Suma = %d\n", a + b);
 	printf("Diferenta = %d\n", a - b);
 	printf("Produsul = %d\n", a * b);
