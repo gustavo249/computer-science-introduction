@@ -1,11 +1,24 @@
 #include <stdio.h>
 
-int main()
-{
-	int a, b;
-	printf("Introduceti a si b\n");
-	scanf("%d %d", &a, &b);
 
+//metoda scaderilor repetate
+int cmmdcScaderiRepetate(int a, int b)
+{
+	
+	//scadem din numarul mai mare pe celalalt pana numerele ajung egale
+	while (a != b)
+	{
+		if (a > b)
+			a = a - b;
+		else
+			b = b - a;
+	}
+	return a;	
+}
+
+//metoda euclid
+int cmmdcEuclid(int a, int b)
+{
 	int rest = 0;
 	while (b != 0)
 	{
@@ -13,6 +26,15 @@ int main()
 		a = b;
 		b = rest;
 	}
-	printf("Cmmd este %d\n", a);	
+	return a;
+}
+
+int main()
+{
+	int a, b;
+	printf("Introduceti a si b\n");
+	scanf("%d %d", &a, &b);
+	
+	printf("Cmmd este %d\n", cmmdcScaderiRepetate(a, b));	
 	return (0);
 }
